@@ -1,0 +1,12 @@
+Main simulation file is simulation.cpp (C++ code). Variables to change are in “variables.cpp” Open for details on the code and instruction to compile (requires g++ compiler). 
+
+This code simulates the stochastic dynamics of sebaceous gland growth and homeostasis at the single cell level. To reproduce the model-data comparison from the main text (see manuscript online for access to the full clonal dataset):
+
+- "count.txt" has time (in days) as first column and clonal persistence (in fraction) as second column). 
+
+
+- "mean.txt" has time (in days) as first column, average number of basal cells in a clone as second column, and average number of suprabasal cells in a clone as third column. This can be compared to the dataset in "data_mean", showing average, SD clone size (both for basal and suprabasal cells) and number of clones as each time point.
+
+- "cumul.txt" has all of the cumulative distribution in clone sizes at all time points as columns.
+
+The simulation should run in a few minutes on a standard computer. 
